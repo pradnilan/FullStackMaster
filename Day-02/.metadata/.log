@@ -297,3 +297,6 @@ java.lang.IllegalStateException: Disconnected before saving. Please post stacktr
 		at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1482)
 		at org.eclipse.ui.actions.CloseResourceAction.run(CloseResourceAction.java:190)
 		... 29 more
+
+!ENTRY org.eclipse.core.jobs 2 2 2022-04-09 22:05:40.699
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.tm.terminal.view.ui.local.showin.detectors.DetectWSL$WslDetectJob

@@ -1,0 +1,5 @@
+Maths,98
+Science,97
+Social,87
+Biology,75
+Hindi,90
