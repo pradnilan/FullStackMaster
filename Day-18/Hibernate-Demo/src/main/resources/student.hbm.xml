@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name = "com.simplilearn.hibernate.bean.Student" table = "studentdata">
+        <id name = "rollNo" type = "int" column = "roll_no">
+            <generator class="increment"/>
+        </id>
+        <!-- every table in hibernate must have a filed for primary key, id tag is used to create the primary key-->
+        <property name = "firstName" column = "firest_name" type="string"/>
+        <property name = "lastName" column = "last_name" type="string"/>
+        <property name = "std" column = "standard" type="int"/>
+        <property name = "grade" column = "grade" type="string"/>
+    </class>
+</hibernate-mapping>

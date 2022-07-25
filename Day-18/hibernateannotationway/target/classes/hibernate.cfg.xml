@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+
+        <!-- dialect converts the calls into respective database requirement-->
+        <property name = "hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <property name = "hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name = "hibernate.connection.url">jdbc:mysql://localhost/mytrgdb</property>
+        <property name = "hibernate.connection.username">root</property>
+        <property name = "hibernate.connection.password">root#123</property>
+
+        <!--what queries are generated bu hibernate if you want to display on the console-->
+        <property name="show_sql">true</property>
+
+        <!--takes care of table creation
+         create - everytime new table is created.if any table is already existed then it will be deleted
+         update - if the table is already existed, it will use to store the data, if not new tables will be created-->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <!-- List of XML mapping files -->
+
+
+        <mapping class="com.simplilearn.hibernate.bean.Student"></mapping>
+
+    </session-factory>
+</hibernate-configuration>

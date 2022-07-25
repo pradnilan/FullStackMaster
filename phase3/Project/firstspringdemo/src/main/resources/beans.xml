@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--lets create object of Helloworld class-->
+    <bean id="obj" class="com.simplilearn.HelloWorld"></bean>
+    <bean id="student" class="com.simplilearn.Student">
+        <property name="id" value="1"></property>
+        <property name="name" value="prad"></property>
+        <property name="passport" ref="passport"></property>
+    </bean>
+    <bean id="passport" class="com.simplilearn.Passport">
+        <property name="passportNo" value="111112222"></property>
+    </bean>
+
+
+</beans>

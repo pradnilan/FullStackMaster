@@ -16,9 +16,11 @@ public class ResultSetDemo {
 					"root",
 					"mko0bhu8CFT&");
 			
-			String query="select * from studentdata";
+			
 			
 			Statement statement=connection.createStatement();
+			
+			String query="select * from studentdata";
 			
 			ResultSet resultSet=statement.executeQuery(query);
 			
